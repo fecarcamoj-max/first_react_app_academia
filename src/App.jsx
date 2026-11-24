@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Content from "./Content";
 import Footer from "./Footer";
+import UserCard from "./UserCard";
 
 function App(){
   
@@ -22,6 +23,16 @@ function App(){
               nombre={nombre}
               apellido="Letelier"
             />
+              <UserCard 
+                name="Ricardo"
+                age={33}
+                isOnline={true}
+              />
+              <UserCard
+                name="Marcela"
+                age={44}
+                isOnline={false}
+              />
             <Content />
             <Footer />
 
