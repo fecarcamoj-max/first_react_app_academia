@@ -14,10 +14,14 @@ function App(){
   const subtitle = "Introduction to JSX";
   const yearNumber = new Date().getFullYear();
   const nextYear = yearNumber + 1;
-
+  const nombre = "Fabian";
   return (
           <>
-            <Header />
+            <Header 
+              nextYear={nextYear}
+              nombre={nombre}
+              apellido="Letelier"
+            />
             <Content />
             <Footer />
 
