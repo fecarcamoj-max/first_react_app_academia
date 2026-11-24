@@ -1,3 +1,7 @@
+import Header from "./Header";
+import Content from "./Content";
+import Footer from "./Footer";
+
 function App(){
   
   const message = "Full Stack - Front End 2026";
@@ -13,6 +17,12 @@ function App(){
 
   return (
           <>
+            <Header />
+            <Content />
+            <Footer />
+
+            <hr></hr>
+            
             <h1>{title}</h1>
             <p>{subtitle}</p>
             <small>Mensaje pequeño</small>
