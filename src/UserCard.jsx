@@ -1,12 +1,13 @@
-function UserCard(props){
+function UserCard({name, age, isOnline}){
+
 
     return (
         <>
             <hr/>
             <ul>
-                <li>{props.name}</li>
-                <li>{props.age}</li>
-                <li>{props.isOnline}</li>
+                <li>{name}</li>
+                <li>{age}</li>
+<li>{isOnline ? "Activo" : "NO"}</li>
             </ul>
             <hr/>
         </>
