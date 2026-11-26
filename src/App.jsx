@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import UserCard from "./UserCard";
 import ProductCard from "./ProductCard";
 import OrderSummary from "./OrderSummary";
+import Counter from "./Counter";
 
 function App(){
   
@@ -25,6 +26,9 @@ function App(){
               nombre={nombre}
               apellido="Letelier"
             />
+
+              <Counter/>
+              
               <OrderSummary
                 orderId={789}
                 totalPrice={100.6}
