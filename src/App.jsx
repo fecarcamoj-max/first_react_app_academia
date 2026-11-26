@@ -2,6 +2,8 @@ import Header from "./Header";
 import Content from "./Content";
 import Footer from "./Footer";
 import UserCard from "./UserCard";
+import ProductCard from "./ProductCard";
+import OrderSummary from "./OrderSummary";
 
 function App(){
   
@@ -23,6 +25,16 @@ function App(){
               nombre={nombre}
               apellido="Letelier"
             />
+              <OrderSummary
+                orderId={789}
+                totalPrice={100.6}
+                isPaid={true}
+              />
+              <OrderSummary
+                orderId={987}
+                totalPrice={156.87}
+                isPaid={false}
+              />
               <UserCard 
                 name="Ricardo"
                 age={33}
@@ -32,6 +44,16 @@ function App(){
                 name="Marcela"
                 age={44}
                 isOnline={false}
+              />
+              <ProductCard
+                name="Laptop"
+                price={999.99}
+                isAvailable={true}
+              />
+              <ProductCard
+                name="Mouse"
+                price={25.5}
+                isAvailable={false}
               />
             <Content />
             <Footer />
